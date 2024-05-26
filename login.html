@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />  
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class=" bg-white md:bg-white lg:bg-shopmatic-tonal xl:bg-shopmatic-tonal grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-h-screen">
+
+    <div id="left-panel" class="min-h-screen hidden md:hidden lg:flex xl:flex flex-col justify-center items-end">
+        <div class=" w-8/12 flex flex-col space-y-9 justify-end items-center">
+            <img class="" src="/assets/images/logo.png" alt="logo shopmatic">
+            <img src="/assets/images/img-intro.png" alt="logo shopmatic">
+            <span class=" font-Poppins text-sm text-shopmatic-secondary">copyright 2024 - shopmatic.id</span>
+        </div>
+        
+    </div>
+    <div id="right-panel" class="min-h-screen w-full bg-white flex flex-col justify-start md:justify-start lg:justify-center xl:justify-center my-10 md:my-10 lg:my-0 xl:my-0">
+        <div class="w-full md:w-full lg:w-9/12 xl:w-9/12 ml-0 md:ml-0 lg:ml-8 xl:ml-8 px-8 md:px-8 lg:px-0 xl:px-0 flex flex-col space-y-9 justify-start items-start">
+            <!-- register -->
+            <div id="register" class="w-full">
+                <div class="w-full flex flex-col space-y-9 justify-start items-start">
+                    <div class="flex flex-col space-y-2">
+                        <h1 class="font-Poppins text-2xl text-black font-semibold">Selamat datang di <span class="text-shopmatic-primary">#Shopmatic</span></h1>
+                        <span class=" font-Poppins text-base text-shopmatic-secondary">Isi data diri anda dan mulai bisnis anda dengan kami sekarang juga</span>
+                    </div>
+                    <div class="w-full">
+                        <form class="flex flex-col space-y-6">
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                                    <label for="Email" class="block mb-2 text-sm font-semibold font-Poppins text-black">Email</label>
+                                    <input type="email" id="email" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Email" required />
+                                </div>
+                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                                    <label for="phone" class="block mb-2 text-sm font-semibold font-Poppins text-black">No. Handphone</label>
+                                    <input type="text" id="phone" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="+628_" required />
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                                    <label for="username" class="block mb-2 text-sm font-semibold font-Poppins text-black">Username</label>
+                                    <input type="text" id="username" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Username" required />
+                                </div>
+                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 relative">
+                                    <label for="password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Password</label>
+                                    <input type="password" id="password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
+                                    <div class="show-hide-password cursor-pointer absolute z-10 right-3 bottom-4">
+                                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                                            <path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 relative">
+                                    <label for="confirm-password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Confirm Password</label>
+                                    <input type="password" id="confirm-password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
+                                    <div class="show-hide-confirm-password cursor-pointer absolute z-10 right-3 bottom-4">
+                                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                                            <path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                                    <label for="refcode" class="block mb-2 text-sm font-semibold font-Poppins text-black">Refferal Code</label>
+                                    <input type="text" id="refcode" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Refferal Code" required />
+                                </div>                       
+                            </div>
+                            <div class="flex items-start md:items-center lg:items-center xl:items-center">
+                                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-shopmatic-primary bg-gray-100 border-gray-300 rounded focus:ring-shopmatic-primary focus:ring-2">
+                                <label class=" ms-3 font-Poppins text-sm font-medium text-shopmatic-secondary">Saya setuju dengan <a href="#" class=" cursor-pointer text-shopmatic-primary hover:underline">Syarat dan ketentuan Shopmatic</a></label>
+                            </div>
+                            <div class="flex flex-col space-y-4">
+                                <div class="font-Poppins text-sm font-medium text-shopmatic-secondary">Sudah punya akun? <a href="#" class="goto-login cursor-pointer text-shopmatic-primary hover:underline">Masuk</a></div>
+                                <div class="inline-start">
+                                    <button type="submit" class="text-white bg-shopmatic-primary py-3.5 px-6 rounded-md font-Poppins font-semibold text-sm">Create Account</button>
+                                </div>
+                            </div>                    
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /register -->
+
+            <!-- login -->
+            <div id="login" class="w-full hidden">            
+                <div class="w-full flex flex-col space-y-9 justify-start items-start">
+                    <div class="flex flex-col space-y-2">
+                        <h1 class="font-Poppins text-2xl text-black font-semibold">Selamat datang Kembali di  <span class="text-shopmatic-primary">#Shopmatic</span></h1>
+                        <span class=" font-Poppins text-base text-shopmatic-secondary">Silahkan masuk dan memulai kemudahan dalam mengelola tokomu dalam satu platform.</span>
+                    </div>
+                    <div class="w-full">
+                        <form class="flex flex-col space-y-6">
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                                <div class="w-full">
+                                    <label for="Email" class="block mb-2 text-sm font-semibold font-Poppins text-black">Email</label>
+                                    <input type="email" id="email" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Email" required />
+                                </div>                               
+                            </div>
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                               
+                                <div class="w-full relative">
+                                    <label for="login-password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Password</label>
+                                    <input type="password" id="login-password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
+                                    <div class="show-hide-login-password cursor-pointer absolute z-10 right-3 bottom-4">
+                                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                                            <path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="flex items-start md:items-center lg:items-center xl:items-center">                                
+                                <a href="#" class="goto-forgot font-Poppins text-sm font-medium cursor-pointer text-shopmatic-primary hover:underline">Lupa Password?</a>
+                            </div>
+                            <div class="flex flex-col space-y-4">                                
+                                <div class="inline-start">
+                                    <button type="submit" class="text-white bg-shopmatic-primary py-3.5 px-6 rounded-md font-Poppins font-semibold text-sm">Sign In</button>
+                                </div>
+                                <div class="font-Poppins text-sm font-medium text-shopmatic-secondary">Belum punya akun? <a href="#" class="goto-register cursor-pointer text-shopmatic-primary hover:underline">Daftar Sekarang</a></div>
+                            </div>                    
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /login -->
+
+             <!-- login -->
+             <div id="forgot" class="w-full hidden">            
+                <div class="w-full flex flex-col space-y-9 justify-start items-start">
+                    <div class="flex flex-col space-y-2">
+                        <h1 class="font-Poppins text-2xl text-black font-semibold">Lupa Password</h1>
+                        <span class=" font-Poppins text-base text-shopmatic-secondary">Masukan Email yang kamu daftarkan sebelumnya</span>
+                    </div>
+                    <div class="w-full">
+                        <form class="flex flex-col space-y-6">
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                                <div class="w-full">
+                                    <label for="Email" class="block mb-2 text-sm font-semibold font-Poppins text-black">Email</label>
+                                    <input type="email" id="email" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Email" required />
+                                </div>                               
+                            </div>                                                     
+                            
+                            <div class="flex flex-col space-y-4">                                
+                                <div class="inline-start">
+                                    <button type="submit" class="text-white bg-shopmatic-primary py-3.5 px-6 rounded-md font-Poppins font-semibold text-sm">Verifikasi</button>
+                                </div>                                
+                            </div>                    
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /login -->
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./assets/js/shopmatic2.js"></script>
+</body>
+</html>

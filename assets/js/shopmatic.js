@@ -57,6 +57,7 @@ $(document).ready(function (){
         $('#register').removeClass('hidden');
 
         $('#register-tab').attr('aria-selected', true);
+        $('#register-tab').html('Register');
 
         $('#heading-tab > li > button').removeClass('bg-shopmatic-primary');
         $('#heading-tab > li > button').removeClass('text-white');
@@ -70,6 +71,8 @@ $(document).ready(function (){
         $('#default-tab-content > div').addClass('hidden');
         $('#login').removeClass('hidden');
         $('#login-tab').attr('aria-selected', true);
+
+        $('#login-tab').html('Login');
 
         $('#heading-tab > li > button').removeClass('bg-shopmatic-primary');
         $('#heading-tab > li > button').removeClass('text-white');
