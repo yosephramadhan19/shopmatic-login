@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />  
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-shopmatic-background">
+
+    <div class="container">
+        <div class="box w-11/12 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto flex flex-col items-center space-y-14 my-12">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="logo-shopmatic">
+            </div>
+            <div class="box rounded-lg w-full">
+                <div>
+                    <ul class="flex flex-wrap -mb-px text-base text-black font-medium text-center bg-shopmatic-tonal rounded-t-lg" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" data-tabs-active-classes="bg-shopmatic-primary text-white hover:text-white rounded-t-lg">
+                        <li class="w-1/2" role="presentation">
+                            <button class="p-4 w-full font-Poppins text-base font-semibold" id="login-tab"data-tabs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="false">Login</button>
+                        </li>
+                        <li class="w-1/2" role="presentation">
+                            <button class="p-4 w-full text-black font-Poppins text-base font-semibold hover:text-black" id="register-tab" data-tabs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="default-tab-content">
+                    <div class="hidden" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <div class="flex flex-col space-y-3">
+                            <form class="py-8 px-6 bg-white rounded-b-lg">
+                                <div class="flex flex-col space-y-6">
+                                    <div>
+                                        <label for="username" class="block mb-2 text-sm font-semibold font-Poppins text-black">Username</label>
+                                        <input type="text" id="username" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Username" required />
+                                    </div>
+                                    <div class="relative">
+                                        <label for="Password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Password</label>
+                                        <input type="password" id="password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
+                                        <div class="absolute z-10 right-3 bottom-4 cursor-pointer show-hide-password">
+                                            <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+                                                <path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class=" inline-block">
+                                        <button type="submit" class="text-white bg-shopmatic-primary py-3.5 px-6 rounded-md font-Poppins font-semibold text-sm">Submit</button>
+                                    </div>                                    
+                                </div>
+                            </form>
+                            <div class="flex flex-row justify-between font-Poppins text-sm text-shopmatic-secondary">
+                                <button class="hover:underline" >Forgot Password?</button>
+                                <button class="hover:underline" id="register-tab" data-tabs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Create New Account</button>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="hidden" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <div class="flex flex-col space-y-3">
+                            <form class="py-8 px-6 bg-white rounded-b-lg">
+                                <div class="flex flex-col space-y-6">
+                                    <div>
+                                        <label for="email" class="block mb-2 text-sm font-semibold font-Poppins text-black">Email</label>
+                                        <input type="email" id="email" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Email" required />
+                                    </div>
+                                    <div>
+                                        <label for="phone" class="block mb-2 text-sm font-semibold font-Poppins text-black">Phone Number</label>
+                                        <input type="text" id="phone" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="628_" required />
+                                    </div>
+                                    <div>
+                                        <label for="username" class="block mb-2 text-sm font-semibold font-Poppins text-black">Username</label>
+                                        <input type="text" id="username" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Username" required />
+                                    </div>
+                                    <div class="relative">
+                                        <label for="create-password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Password</label>
+                                        <input type="password" id="create-password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
+                                        <div class="absolute z-10 right-3 bottom-4 cursor-pointer show-hide-create-password">
+                                            <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+                                                <path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="relative">
+                                        <label for="confirm-password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Confirm Password</label>
+                                        <input type="password" id="confirm-password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
+                                        <div class="absolute z-10 right-3 bottom-4 cursor-pointer show-hide-confirm-password">
+                                            <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+                                                <path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="refferal-code" class="block mb-2 text-sm font-semibold font-Poppins text-black">Refferal Code</label>
+                                        <input type="text" id="refferal-code" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Refferal Code" required />
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-shopmatic-primary bg-gray-100 border-gray-300 rounded focus:ring-shopmatic-primary focus:ring-2">
+                                        <label class=" ms-2 font-Poppins text-base font-medium text-black">I agree with the <a class=" cursor-pointer text-shopmatic-primary hover:underline">Privacy Policy</a></label>
+                                    </div>
+                                    <div class=" inline-block">
+                                        <button type="submit" class="text-white bg-shopmatic-primary py-3.5 px-6 rounded-md font-Poppins font-semibold text-sm">Create Account</button>
+                                    </div>                                    
+                                </div>
+                            </form>
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-between font-Poppins text-sm text-shopmatic-secondary space-y-3 md:space-y-0 lg:space-y-0 xl:space-y-0">
+                                <a href="#" class="hover:underline">Forgot Password?</a>
+                                <a href="#" class="hover:underline">Already have an account? Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden" id="forgot" role="tabpanel" aria-labelledby="forgot-tab">
+                        <div class="flex flex-col space-y-3">
+                            <form class="py-8 px-6 bg-white rounded-b-lg">
+                                <div class="flex flex-col space-y-6">
+                                    <div>
+                                        <label for="email" class="block mb-2 text-sm font-semibold font-Poppins text-black">Email</label>
+                                        <input type="email" id="email" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Email" required />
+                                    </div>
+                                    <div class=" inline-block">
+                                        <button type="submit" class="text-white bg-shopmatic-primary py-3.5 px-6 rounded-md font-Poppins font-semibold text-sm">Submit</button>
+                                    </div>                                    
+                                </div>
+                            </form>
+                            <div class="flex flex-row justify-between font-Poppins text-sm text-shopmatic-secondary">
+                                <button class="hover:underline">Forgot Password?</button>
+                                <button href="#" class="hover:underline">Create New Account</button>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/assets/js/shopmatic.js"></script>
+</body>
+</html>
