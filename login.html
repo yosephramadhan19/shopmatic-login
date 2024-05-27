@@ -12,8 +12,7 @@
 <body class=" bg-white md:bg-white lg:bg-shopmatic-tonal xl:bg-shopmatic-tonal grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-h-screen">
 
     <div id="left-panel" class="min-h-screen hidden md:hidden lg:flex xl:flex flex-col justify-center items-end">
-        <div class=" w-8/12 flex flex-col space-y-9 justify-end items-center">
-            <img class="" src="./assets/images/logo.png" alt="logo shopmatic">
+        <div class=" w-8/12 flex flex-col space-y-9 mr-8 justify-end items-center">
             <img src="./assets/images/img-intro.png" alt="logo shopmatic">
             <span class=" font-Poppins text-sm text-shopmatic-secondary">copyright 2024 - shopmatic.id</span>
         </div>
@@ -22,29 +21,33 @@
     <div id="right-panel" class="min-h-screen w-full bg-white flex flex-col justify-start md:justify-start lg:justify-center xl:justify-center my-10 md:my-10 lg:my-0 xl:my-0">
         <div class="w-full md:w-full lg:w-9/12 xl:w-9/12 ml-0 md:ml-0 lg:ml-8 xl:ml-8 px-8 md:px-8 lg:px-0 xl:px-0 flex flex-col space-y-9 justify-start items-start">
             <!-- register -->
-            <div id="register" class="w-full">
+            <div id="register" class="w-full pt-8 pb-8">
                 <div class="w-full flex flex-col space-y-9 justify-start items-start">
-                    <div class="flex flex-col space-y-2">
-                        <h1 class="font-Poppins text-2xl text-black font-semibold">Selamat datang di <span class="text-shopmatic-primary">#Shopmatic</span></h1>
-                        <span class=" font-Poppins text-base text-shopmatic-secondary">Isi data diri anda dan mulai bisnis anda dengan kami sekarang juga</span>
+                    <div class="flex flex-row space-y-2 justify-center w-full">
+                       <img src="./assets/images/logo.png" alt="logo-shopmatic">
                     </div>
                     <div class="w-full">
                         <form class="flex flex-col space-y-6">
                             <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
-                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                                <div class="w-full">
                                     <label for="Email" class="block mb-2 text-sm font-semibold font-Poppins text-black">Email</label>
                                     <input type="email" id="email" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Email" required />
                                 </div>
+                               
+                            </div>
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
                                 <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
                                     <label for="phone" class="block mb-2 text-sm font-semibold font-Poppins text-black">No. Handphone</label>
                                     <input type="text" id="phone" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="+628_" required />
                                 </div>
-                            </div>
-                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
                                 <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
                                     <label for="username" class="block mb-2 text-sm font-semibold font-Poppins text-black">Username</label>
                                     <input type="text" id="username" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Username" required />
                                 </div>
+                                
+                            </div>
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                                
                                 <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 relative">
                                     <label for="password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Password</label>
                                     <input type="password" id="password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
@@ -55,8 +58,6 @@
                                         </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
                                 <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 relative">
                                     <label for="confirm-password" class="block mb-2 text-sm font-semibold font-Poppins text-black">Confirm Password</label>
                                     <input type="password" id="confirm-password" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="•••••••••" required />
@@ -67,7 +68,10 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+                            </div>
+                            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
+                               
+                                <div class="w-full">
                                     <label for="refcode" class="block mb-2 text-sm font-semibold font-Poppins text-black">Refferal Code</label>
                                     <input type="text" id="refcode" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Refferal Code" required />
                                 </div>                       
@@ -91,10 +95,9 @@
             <!-- login -->
             <div id="login" class="w-full hidden">            
                 <div class="w-full flex flex-col space-y-9 justify-start items-start">
-                    <div class="flex flex-col space-y-2">
-                        <h1 class="font-Poppins text-2xl text-black font-semibold">Selamat datang Kembali di  <span class="text-shopmatic-primary">#Shopmatic</span></h1>
-                        <span class=" font-Poppins text-base text-shopmatic-secondary">Silahkan masuk dan memulai kemudahan dalam mengelola tokomu dalam satu platform.</span>
-                    </div>
+                    <div class="flex flex-row space-y-2 justify-center w-full">
+                        <img src="./assets/images/logo.png" alt="logo-shopmatic">
+                     </div>
                     <div class="w-full">
                         <form class="flex flex-col space-y-6">
                             <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
@@ -134,10 +137,9 @@
              <!-- login -->
              <div id="forgot" class="w-full hidden">            
                 <div class="w-full flex flex-col space-y-9 justify-start items-start">
-                    <div class="flex flex-col space-y-2">
-                        <h1 class="font-Poppins text-2xl text-black font-semibold">Lupa Password</h1>
-                        <span class=" font-Poppins text-base text-shopmatic-secondary">Masukan Email yang kamu daftarkan sebelumnya</span>
-                    </div>
+                    <div class="flex flex-row space-y-2 justify-center w-full">
+                        <img src="./assets/images/logo.png" alt="logo-shopmatic">
+                     </div>
                     <div class="w-full">
                         <form class="flex flex-col space-y-6">
                             <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row space-x-0 md:space-x-6 lg:space-x-6 xl:space-x-6 space-y-6 md:space-y-0 lg:space-y-0 xl:space-y-0 ">
@@ -145,13 +147,13 @@
                                     <label for="Email" class="block mb-2 text-sm font-semibold font-Poppins text-black">Email</label>
                                     <input type="email" id="email" class="bg-white border border-shopmatic-devider font-Poppins text-black text-sm rounded block w-full py-3.5 px-4" placeholder="Email" required />
                                 </div>                               
-                            </div>                                                     
-                            
+                            </div> 
                             <div class="flex flex-col space-y-4">                                
                                 <div class="inline-start">
                                     <button type="submit" class="text-white bg-shopmatic-primary py-3.5 px-6 rounded-md font-Poppins font-semibold text-sm">Verifikasi</button>
                                 </div>                                
-                            </div>                    
+                            </div> 
+                            <div class="font-Poppins text-sm font-medium text-shopmatic-secondary">Sudah punya akun? <a href="#" class="goto-login cursor-pointer text-shopmatic-primary hover:underline">Masuk</a></div>                   
                         </form>
                     </div>
                 </div>
